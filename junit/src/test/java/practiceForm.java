@@ -51,12 +51,12 @@ public class practiceForm {
         WebElement calendarInput= driver.findElement(By.id("dateOfBirthInput"));
         calendarInput.sendKeys(Keys.CONTROL+"a");
         Thread.sleep(1000);
-        calendarInput.sendKeys("03/18/1999");
+        calendarInput.sendKeys("11/13/1993");
         Thread.sleep(1000);
         calendarInput.sendKeys(Keys.ENTER);
 
         WebElement subject = driver.findElement(By.id("subjectsInput"));
-        subject.sendKeys("English");
+        subject.sendKeys("English,CSE,Bangla");
 
         WebElement sportsCheckBox= driver.findElement(By.id("hobbies-checkbox-1"));
         Actions action =new Actions(driver);
